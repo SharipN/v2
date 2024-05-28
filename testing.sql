@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 28 2024 г., 09:28
+-- Время создания: Май 28 2024 г., 15:13
 -- Версия сервера: 5.7.39
 -- Версия PHP: 7.3.33
 
@@ -95,13 +95,14 @@ CREATE TABLE `comments` (
 INSERT INTO `comments` (`id`, `articleid`, `name`, `email`, `text`, `date`) VALUES
 (1, '1', 'asdasd', 'asdads', 'asdasd', '2024-05-24 00:00:00'),
 (2, '1', 'asdasd', 'asdads', 'asdasd', '2024-05-24 00:00:00'),
-(29, '11', 'Предпоследний', 'nurgisa.sharipov@mail.ru', '123', '2024-05-26 18:46:53'),
+(30, '8', 'Предпоследний', '.asdasd@mail.ru', '123', '2024-05-28 09:39:09'),
+(29, '11', 'Предпоследний', '.dasda@mail.ru', '123', '2024-05-26 18:46:53'),
 (28, '1', 'Имя', 'фывфыв', 'Для 12', '2024-05-26 18:42:50'),
 (27, '3', 'Имя', 'фывфыв', 'Для 12', '2024-05-25 18:47:15'),
 (26, '12', 'Имя', 'фывфыв', 'Для 12', '2024-05-25 18:41:28'),
-(25, '6', 'N SH', 'altel4g2001@mail.ru', '123', '2024-05-24 18:49:06'),
-(24, '4', 'N SH', 'altel4g2001@mail.ru', '123', '2024-05-24 14:54:01'),
-(23, '3', 'N SH', 'altel4g2001@mail.ru', '123', '2024-05-24 14:53:43');
+(25, '6', 'N SH', 'asdads@mail.ru', '123', '2024-05-24 18:49:06'),
+(24, '4', 'N SH', 'asdad@mail.ru', '123', '2024-05-24 14:54:01'),
+(23, '3', 'N SH', 'asdasda@mail.ru', '123', '2024-05-24 14:53:43');
 
 -- --------------------------------------------------------
 
@@ -178,13 +179,6 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `user`
---
-
-INSERT INTO `user` (`id`, `email`, `password`, `name`) VALUES
-(1, 'nurgisa.sharipov@mail.ru', '$2y$10$8t6lV6i2p44D4avg.XG/ROUcoriFMCtezgnGB8YOO5eKOqRwm.5TS', NULL);
-
---
 -- Индексы сохранённых таблиц
 --
 
@@ -250,7 +244,7 @@ ALTER TABLE `article`
 -- AUTO_INCREMENT для таблицы `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT для таблицы `contact`
