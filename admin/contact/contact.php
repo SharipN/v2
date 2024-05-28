@@ -1,7 +1,7 @@
 <?php
 
 $user="root";
-$password="";
+$password="root";
 $host="localhost";
 $db="testing";
 $dbh = 'mysql:host='.$host.';dbname='.$db.';charset=utf8';
